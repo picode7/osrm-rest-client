@@ -41,7 +41,7 @@ import { OSRM, IOsrmWaypoint } from 'osrm-rest-client';
 
 // Examples using async
 const osrm = OSRM(); // Using online OSRM service at https://router.project-osrm.org
-// Alternatively, supply your own `new OSRM('https://router.project-osrm.org')`
+// Alternatively, supply your own `OSRM({ osrm: 'https://router.project-osrm.org' })`
 // Default search profile is `driving`, but you can override this.
 
 const nearest = await osrm.nearest({
